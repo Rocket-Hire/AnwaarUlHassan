@@ -1,29 +1,9 @@
-// Given an array of characters, determine if the array is a palindrome or not
-
-// Example
-// Input: arr = "redivider"
-// Output: True
-
-// Input: arr = "ogo"
-// Output: True
-
-// Example
-// Input: arr = "zambia"
-// Output: False
 
 #include <iostream>
 
 int main() {
   std::cout << "Hello World!\n";
-  string s ="zamaz";
-  cout<<"enter string"<<endl;
-  for(i=0 ;i<s.length(); i++){
-    if(s[i]!=s[s.length()-i-1]){
-      return "No";
-    }
-  }else{
-  return "Yes";
-      }
+
 }
 
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -63,3 +43,25 @@ int main() {
 
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
+
+
+int sum =14;
+int arr[]={1,4,6,3,2,8,7,3};
+size_t=sizeof(arr)/sizeof(int);
+for(int i=0;i<size;i++){
+  for(int j=i;j<size;++j){
+    if(arr[i]+arr[j]==sum)
+      cout<<i<<j;
+  }
+}
+
+//Complexity O(n^2)
+
+Solution 2
+8 is the max number
+arr2 = {0,1,2,3,4,5,6,7,8}
+arr2[sum - arr[i]]  
+O(n) + O(n) + O(n)
+O(3n) => O(n)
+
+Solution 3
